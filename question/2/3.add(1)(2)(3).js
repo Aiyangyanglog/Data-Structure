@@ -3,24 +3,24 @@
 // 柯里化主要有3个作用： 参数复用、提前返回和 延迟执行
 
 // const add = (x, y) => x + y;
-// add(1, 2);
+// addCurry(1, 2);
 
 // const add = x => y => x + y;
-// add(1)(2);
+// addCurry(1)(2);
 
 // const add = x => y => z => x + y + z;
-// add(1)(2)(3);
+// addCurry(1)(2)(3);
 
 const curry = (fn, ...args) =>
   args.length >= fn.length
     ? fn(...args)
     : (..._args) => curry(fn, ...args, ..._args);
 
-function add1(x, y, z) {
+function add(x, y, z) {
   return x + y + z;
 }
-const add = curry(add1);
-console.log(add(1, 2, 3));
-console.log(add(1)(2)(3));
-console.log(add(1, 2)(3));
-console.log(add(1)(2, 3));
+const addCurry = curry(add);
+console.log(addCurry(1, 2, 3));
+console.log(addCurry(1)(2)(3));
+console.log(addCurry(1, 2)(3));
+console.log(addCurry(1)(2, 3));

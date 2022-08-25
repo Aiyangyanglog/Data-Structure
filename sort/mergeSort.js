@@ -1,8 +1,6 @@
 Array.prototype.mergeSort = function () {
   const rec = (arr) => {
-    if (arr.length === 1) {
-      return arr;
-    }
+    if (arr.length === 1) return arr;
     const mid = Math.floor(arr.length / 2);
     const left = arr.slice(0, mid);
     const right = arr.slice(mid, arr.length);
@@ -22,7 +20,10 @@ Array.prototype.mergeSort = function () {
     }
     return res;
   };
-  rec(this);
+  const res = rec(this);
+  res.forEach((n, i) => {
+    this[i] = n;
+  });
 };
 const arr = [5, 4, 3, 2, 1];
 arr.mergeSort();

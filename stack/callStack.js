@@ -5,4 +5,5 @@ const func2 = () => {
   func3();
 };
 const func3 = () => {};
+
 func1();

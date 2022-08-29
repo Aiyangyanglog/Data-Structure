@@ -10,6 +10,7 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
+// 时间复杂度O(n) 空间复杂度O(n)
 var addTwoNumbers = function (l1, l2) {
   const l3 = new ListNode(0);
   let p1 = l1;

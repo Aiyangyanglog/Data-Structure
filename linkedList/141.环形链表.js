@@ -10,6 +10,7 @@
  * @param {ListNode} head
  * @return {boolean}
  */
+// 时间复杂度O(n) 空间复杂度O(1)
 var hasCycle = function (head) {
   let p1 = head;
   let p2 = head;

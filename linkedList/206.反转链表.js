@@ -9,6 +9,7 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
+// 时间复杂度O(n) 空间复杂度O(1)
 var reverseList = function (head) {
   let p1 = head;
   let p2 = null;

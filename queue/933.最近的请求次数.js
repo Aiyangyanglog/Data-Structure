@@ -6,6 +6,7 @@ var RecentCounter = function () {
  * @param {number} t
  * @return {number}
  */
+// 时间复杂度O(n) 空间复杂度O(n)
 RecentCounter.prototype.ping = function (t) {
   this.q.push(t);
   while (this.q[0] < t - 3000) {

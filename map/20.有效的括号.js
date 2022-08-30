@@ -2,6 +2,7 @@
  * @param {string} s
  * @return {boolean}
  */
+// 时间复杂度O(n) 空间复杂度O(1)
 var isValid = function (s) {
   if (s.length % 2) return false;
   let stack = [];

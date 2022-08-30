@@ -2,6 +2,7 @@
  * @param {string} s
  * @return {number}
  */
+// 时间复杂度O(n) 空间复杂度O(m),m是字符串中不重复字符的个数
 var lengthOfLongestSubstring = function (s) {
   let l = 0;
   let res = 0;

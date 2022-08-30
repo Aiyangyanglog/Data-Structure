@@ -3,6 +3,7 @@
  * @param {number[]} nums2
  * @return {number[]}
  */
+// 时间复杂度O(m+n) 空间复杂度O(m)
 var intersection = function (nums1, nums2) {
   let map = new Map();
   nums1.forEach((n) => {

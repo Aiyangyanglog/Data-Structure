@@ -6,8 +6,8 @@
  * }
  */
 /**
- * @param {ListNode} list1
- * @param {ListNode} list2
+ * @param {ListNode} l1
+ * @param {ListNode} l2
  * @return {ListNode}
  */
 var mergeTwoLists = function (l1, l2) {
